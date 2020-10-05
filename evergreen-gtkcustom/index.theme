@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Sierra Negra
+Comment=Sierra-dark-solid customized by Pante - u/thepante
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Sierra Negra
+IconTheme=Adwaita
+CursorTheme=Adwaita
+ButtonLayout=close,minimize,maximize:menu

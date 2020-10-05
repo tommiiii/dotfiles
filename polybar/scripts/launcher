@@ -1,0 +1,5 @@
+#!/bin/bash
+
+## Created By Aditya Shakya
+
+rofi -location 1 -yoffset 38 -xoffset 7 -show drun -columns 2 -show-icons -padding 18 

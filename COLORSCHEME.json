@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/tommy/Pictures/Wallpapers/wallpaper12.png",
+    "alpha": "100",
+    "special": {
+        "background": "#2a1348",
+        "foreground": "#e8e5bc",
+        "cursor": "#e8e5bc"
+    },
+    "colors": {
+        "color0": "#2a1348",
+        "color1": "#C77582",
+        "color2": "#07A393",
+        "color3": "#60BD8F",
+        "color4": "#0CCC8F",
+        "color5": "#A2BB8B",
+        "color6": "#E7A783",
+        "color7": "#e8e5bc",
+        "color8": "#a2a083",
+        "color9": "#C77582",
+        "color10": "#07A393",
+        "color11": "#60BD8F",
+        "color12": "#0CCC8F",
+        "color13": "#A2BB8B",
+        "color14": "#E7A783",
+        "color15": "#e8e5bc"
+    }
+}

@@ -1,0 +1,166 @@
+
+# i3blocks config file
+#
+# Please see man i3blocks for a complete reference!
+# The man page is also hosted at http://vivien.github.io/i3blocks
+#
+# List of valid properties:
+#
+# align
+# color
+# command
+# full_text
+# instance
+# interval
+# label
+# min_width
+# name
+# separator
+# separator_block_width
+# short_text
+# signal
+# urgent
+
+# Global properties
+#
+# The top properties below are applied to every block, but can be overridden.
+# Each block command defaults to the script name to avoid boilerplate.
+command=/home/tommy/.config/i3blocks/$BLOCK_NAME
+separator_block_width=15
+markup=none
+
+# Volume indicator
+#
+# The first parameter sets the step (and units to display)
+# The second parameter overrides the mixer selection
+# See the script for details.
+
+#[microphone]
+#label=
+#interval=5
+#command=/home/tommy/.config/i3blocks/microphone.sh
+
+# Weahter
+#[weather]
+#command=/home/tommy/.config/i3blocks/weather1.sh "EUR|IT|IT009|MILANO"
+#interval=1800
+#color=#c9c9ff
+#border=#535353
+
+[focused_window]
+command=sleep .3; xdotool getactivewindow getwindowname
+align=center
+interval=repeat
+color=#99C794
+
+[spotify]
+label= 
+command=/home/tommy/.config/i3blocks/spotify.py
+color=#81b71a
+interval=5
+
+# Volume indicator
+[audio]
+label=♪
+interval=once
+command=/home/tommy/.config/i3blocks/volume
+color=#d6ba72
+
+# Memory usage
+#
+# The type defaults to "mem" if the instance is not specified.
+[memory]
+label=  
+separator=true
+interval=1
+command=/home/tommy/.config/i3blocks/memory
+color=#ff80a8
+
+# Disk usage
+#
+# The directory defaults to $HOME if the instance is not specified.
+# The script may be called with a optional argument to set the alert
+# (defaults to 10 for 10%).
+[disk]
+label=  
+instance=/mnt/data
+interval=30
+separator=false
+color=#d9534f
+
+[disk]
+#label=
+#instance=/mnt
+#interval=30
+#separator=true
+#color=#ffff00
+
+# CPU usage
+#
+# The script may be called with -w and -c switches to specify thresholds,
+# see the script for details.
+[cpu_usage]
+label=  
+command=/home/tommy/.config/i3blocks/cpu_usage
+interval=1
+#min_width=CPU:100.00%
+separator=true
+color=#9ae3a4
+
+# Temperature
+#
+# Support multiple chips, though lm-sensors.
+# The script may be called with -w and -c switches to specify thresholds,
+# see the script for details.
+[temperature]
+#label=TEMP
+label=  
+interval=10
+command=/home/tommy/.config/i3blocks/temperature
+#color=#8caba8
+color=#dcedc1
+separator=true
+
+# Network interface monitoring
+#
+# If the instance is not specified, use the interface used for default route.
+# The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
+[iface]
+label=  
+instance=wlp2s0
+color=#3e008f
+interval=10
+separator=true
+color=#adff00
+
+[bandwidth]
+label=  
+instance=wlp2s0
+interval=1
+color=#7951ad
+
+# Battery indicator
+#
+# The battery instance defaults to 0.
+[battery]
+label=BAT
+label=⚡  
+label=  
+instance=1
+interval=30
+color=#7286d6
+
+# Date Time
+#
+[time]
+#command= date '+%d/%m/%Y %H:%M'
+command= /home/tommy/.config/i3blocks/calendar
+label=  
+interval=1
+
+
+# OpenVPN support
+#
+# Support multiple VPN, with colors.
+#[openvpn]
+#interval=20
